@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Jamie</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-sub: #666666;
+            --accent: #0071e3; /* 经典蓝色 */
+            --card-border: #eeeeee;
+            --card-hover: #f5f5f7;
+        }
+
+        body {
+            font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 640px; /* 进一步缩小容器宽度，显得更精致 */
+            padding: 60px 24px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .profile-id {
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 13px;
+            color: var(--text-sub);
+            margin: 0;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .project-item:hover {
+            background-color: var(--card-hover);
+            border-color: #d2d2d7;
+            transform: scale(1.01);
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .desc {
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+
+        .arrow {
+            color: #ccc;
+            font-size: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .project-item:hover .arrow {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 11px;
+            color: #b0b0b0;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 480px) {
+            .wrapper { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <div class="profile-id">Jamie</div>
+        <p>独立项目索引 / Project Directory</p>
+    </header>
+
+    <div class="project-list">
+        <a href="https://likeyou2778.github.io/newyear/" class="project-item" target="_blank">
+            <div class="info">
+                <span class="title">九(9)班贺新年</span>
+                <span class="desc">新年互动展示页面</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <a href="https://likeyou2778.github.io/LSHLYJ/" class="project-item" target="_blank">
+            <div class="info">
+                <span class="title">柳思含离宇洁美容机构</span>
+                <span class="desc">美容机构品牌主页</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <a href="https://likeyou2778.github.io/LLH/" class="project-item" target="_blank">
+            <div class="info">
+                <span class="title">利楽衡金子有限公司</span>
+                <span class="desc">企业展示 / 金融业务</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <a href="https://likeyou2778.github.io/CJW/" class="project-item" target="_blank">
+            <div class="info">
+                <span class="title">趁截文辅导班</span>
+                <span class="desc">教育培训门户</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <a href="https://likeyou2778.github.io/XZH/" class="project-item" target="_blank">
+            <div class="info">
+                <span class="title">徐治汉中医诊所</span>
+                <span class="desc">中医诊所展示页面</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <!-- 新增项目 -->
+        <a href="https://likeyou2778.github.io/ColorWar/" class="project-item" target="_blank">
+            <div class="info">
+                <span class="title">彩色大战 · ColorWar</span>
+                <span class="desc">策略类颜色占据游戏</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2025. SINCE 2024.
+    </footer>
+</div>
+
+</body>
+</html>
